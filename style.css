@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Black Ops One", system-ui;
+  background-image: url("bg.avif");
+  background-color: #9e2a2b;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ff9b42;
+}
+
+.quizBox {
+  place-self: center;
+  border: 1em solid white;
+  border-radius: 20px;
+  box-shadow: 0px 1px 20px 5px #000;
+  background-color: white;
+  width: 20em;
+}
+
+.quizTitle {
+  text-transform: uppercase;
+  margin-left: 1.5em;
+}
+
+.quizButtonDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quizButton {
+  background: #01161e;
+  color: #fff;
+}
+
+.quizButton:hover:not([disabled]) {
+  background: #0fa3b1;
+}
+
+.quizButton:disabled {
+  cursor: no-drop;
+}
+
+.quizAnswersBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.correct {
+  background: #31572c;
+}
+
+.incorrect {
+  background: #c1121f;
+}
+
+.nextButton {
+  background: #8d99ae;
+}
+
+.nextButton:hover {
+  background: #2b2d42;
+  color: #fff;
+}
